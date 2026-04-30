@@ -233,7 +233,6 @@ button {
     padding: 10px 16px 14px;
     display: flex;
     gap: 16px;
-    border-top: 1px solid #f0f0f0;
 }
 
 .card .footer span {
