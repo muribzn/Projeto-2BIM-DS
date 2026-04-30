@@ -32,7 +32,9 @@ nav {
     font-size: 18px;
 }
 nav a {
+    /* pesquisado */
     transition: transform 0.3s ease;
+    /* pesquisado */
 }
 
 nav a:hover {
@@ -43,7 +45,9 @@ nav a:hover {
 .lado-esquerdo {
     flex: 1;
     display: flex;
+    /* pesquisado */
     flex-direction: column;
+    /* pesquisado */
     justify-content: center;
     padding-left: 50px;
     background: linear-gradient(to right, #5e17eb, #ff66c4);
@@ -85,7 +89,9 @@ form {
     width: 350px;
     margin: 50px auto;
     margin-right: 30%;
+    /* pesquisado */
     animation: ampliar-no-inicio-h2 1s ease-in-out forwards;
+    /* pesquisado */
 }
 
 .form-inicio {
@@ -164,7 +170,9 @@ button {
 }
 
 .logo a:hover {
+    /* pesquisado */
     transform: scale(1.1);
+    /* pesquisado */
 }
 
 
@@ -316,6 +324,7 @@ button {
   }
 }
 
+/* pesquisado */
 @keyframes ampliar-no-inicio-h2 {
     0% {
     transform: scale(1); 
@@ -335,5 +344,5 @@ button {
     transform-origin: center;
   }
 }
-
+/* pesquisado */
 
