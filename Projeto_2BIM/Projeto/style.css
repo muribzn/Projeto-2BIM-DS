@@ -45,9 +45,11 @@ nav a:hover {
 .lado-esquerdo {
     flex: 1;
     display: flex;
+
     /* pesquisado */
     flex-direction: column;
     /* pesquisado */
+
     justify-content: center;
     padding-left: 50px;
     background: linear-gradient(to right, #5e17eb, #ff66c4);
@@ -66,8 +68,19 @@ nav a:hover {
 
 h1 {
     text-align: left;
-    padding-left: 10px;
-    font-family: 'Poppins', sans-serif;
+    margin-left: 50px;
+    padding-top: 15px;
+    padding-right: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.titulo-principal {
+     background: linear-gradient(90deg, #8A2BE2, #FF69B4);
+
+    /* PESQUISADO*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* PESQUISADO */
 }
 
 #login-h2 {
@@ -89,9 +102,11 @@ form {
     width: 350px;
     margin: 50px auto;
     margin-right: 30%;
+
     /* pesquisado */
     animation: ampliar-no-inicio-h2 1s ease-in-out forwards;
     /* pesquisado */
+    
 }
 
 .form-inicio {
@@ -152,9 +167,15 @@ button {
     justify-content: left;
     display: flex;
     margin-left: 60px;
+    color: white;
 }
 
 .navegacao {
+    color: white;
+    text-decoration: none;
+}
+
+.navegacao-login {
     color: white;
     text-decoration: none;
 }
