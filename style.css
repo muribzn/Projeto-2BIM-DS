@@ -20,13 +20,14 @@ body {
 
 nav {
     display: flex;
-    gap: 50px;
+    flex-wrap: wrap;
+    gap: 30px;
     justify-content: center;
     padding: 20px;
     background: linear-gradient(#5e17eb, #ff66c4);
     opacity: 80%;
     border-radius: 25px;
-    margin: 30px 250px;
+    margin: 1% 10%;
     color: white;
     box-shadow: 0px, 10px, 20px, rgba(0, 0, 0, 0.3);
     font-size: 18px;
@@ -34,6 +35,7 @@ nav {
 nav a {
     /* pesquisado */
     transition: transform 0.3s ease;
+    margin: 0% 2%;
     /* pesquisado */
 }
 
@@ -68,7 +70,7 @@ nav a:hover {
 
 h1 {
     text-align: left;
-    margin-left: 50px;
+    margin-left: 3%;
     padding-top: 15px;
     padding-right: 15px;
     font-family: 'Inter', sans-serif;
@@ -88,7 +90,8 @@ h1 {
     font-weight: bold;
     line-height: 1.5;
     margin-top: 20px;
-    max-width: 800px;
+    margin-left: 6%;
+    max-width: 70%;
     text-align: center;
     background: linear-gradient(to right, #5e17eb, #ff66c4);
     border-radius: 15px;
@@ -100,7 +103,7 @@ h1 {
 
 form {
     width: 350px;
-    margin: 50px auto;
+    margin: 10% 30%;
     margin-right: 30%;
 
     /* pesquisado */
@@ -168,7 +171,7 @@ button {
     animation: ampliar-no-inicio-logo 1.5s ease-in-out forwards;
     justify-content: left;
     display: flex;
-    margin-left: 60px;
+    margin-left: 11.7%;
     color: white;
 }
 
@@ -315,16 +318,17 @@ button {
 
 
 .rodape {
+    clear: both;
     display: flex;
     border: solid rebeccapurple;
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 0px 240px;
+    margin: 4% 5%;
     background: linear-gradient(to right,#5e17eb, #ff66c4);
     color: #fff;
     border-radius: 10px;
-    margin-top: 12vh;
+    margin-bottom: 10vh;
     padding-left: 30px;
     padding-right: 30px;
     animation: pulsar-aprendi-agora 2s infinite;
@@ -368,4 +372,51 @@ button {
   }
 }
 /* pesquisado */
+
+/* responsividade para celular (@media define a condição do tamanho da tela, se essa condição for verdadeira a estilização abaixo dele passa a sobrepor a original*/
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: row;
+        gap: 15px;
+        position: fixed;
+        z-index: 1000;
+        opacity: 100%;
+    }
+
+    .titulo-principal {
+        padding-top: 115px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .lado-esquerdo {
+        padding: 30px 20px;
+        align-items: center;
+    }
+
+    #nome-login {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    #login-h2 {
+        font-size: 22px;
+        max-width: 90%;
+        margin-left: 0;
+    }
+
+    .lado-direito {
+        padding: 30px 20px;
+    }
+
+    form {
+        width: 100%;
+        margin: 0;
+    }
+    /* responsividade para celular (@media define a condição do tamanho da tela, se essa condição for verdadeira a estilização abaixo dele passa a sobrepor a original*/
+    
+}
 
